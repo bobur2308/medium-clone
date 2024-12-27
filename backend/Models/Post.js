@@ -25,6 +25,10 @@ const PostSchema = new mongoose.Schema({
   viewers:{
     type:Number,
     default:0
+  },
+  isActive:{
+    type:Boolean,
+    default:true
   }
 }, {
   timestamps: true, // Automatically adds createdAt and updatedAt fields
