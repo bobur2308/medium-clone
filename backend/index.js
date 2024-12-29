@@ -22,6 +22,8 @@ app.use('/api/auth', require('./Routers/AuthRouter'));
 
 app.use('/api/profile',require('./Routers/UserRouter'))
 
+app.use('/api/open',require('./Routers/HomeRouter'))
+
 
 connectDB()
 const port = process.env.PORT || 5000;
